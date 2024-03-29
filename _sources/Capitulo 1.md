@@ -17,5 +17,10 @@ kernelspec:
 Lets see if this works good good 
 
 ```{code-cell}
-print(2 + 2)
+a=5
+b=6
+def suma(a,b):
+    return a+b
+
+print (round(suma(a,b),2))
 ```
