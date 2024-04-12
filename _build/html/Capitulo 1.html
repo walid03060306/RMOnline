@@ -62,6 +62,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Capitulo 1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -346,7 +348,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -362,6 +366,19 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elasticidad">Elasticidad</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ley-de-hooke">Ley de Hooke</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-1">Ejemplos 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagrama-de-ensayo-a-traccion">Diagrama de ensayo a tracción</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esfuerzo-permisible">Esfuerzo Permisible</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-2">Ejemplos 2</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -373,7 +390,113 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="capitulo-1">
 <h1>Capitulo 1<a class="headerlink" href="#capitulo-1" title="Permalink to this heading">#</a></h1>
-<p>Lets see if this works wow ! walid</p>
+<section id="elasticidad">
+<h2>Elasticidad<a class="headerlink" href="#elasticidad" title="Permalink to this heading">#</a></h2>
+<p>Para poder entender este propiedad de los materiales, analizaremos el siguiente gráfico.</p>
+<figure class="align-default" id="grafico">
+<a class="reference internal image-reference" href="_images/1.svg"><img alt="_images/1.svg" height="500px" src="_images/1.svg" /></a>
+</figure>
+<p>Como se puede apreciar, el objeto en análisis experimentará una deformación y a medida que la fuerza es aplicada, se va acumulando energía potencial de deformación. La misma que puede ser recuperada mediante trabajo externo realizado por el mismo cuerpo, siempre en cuando no se sobrepase el límite elástico.</p>
+<p>Es importante comentar que los esfuerzos producidos cerca al punto de aplicación no serán estudiados en este curso, tampoco en los posteriores. Así mismo, es de vital importancia reconocer que la deformacion longitudinal en la sección es la misma para todos los puntos que la conforman. Por lo tanto, se definirá el esfuerzo de la siguiente forma:</p>
+<figure class="align-default" id="esfuerzo">
+<a class="reference internal image-reference" href="_images/2.svg"><img alt="_images/2.svg" height="500px" src="_images/2.svg" /></a>
+</figure>
+<div class="math notranslate nohighlight">
+\[\sigma=\frac{P}{A}\]</div>
+<p>Esta expresión correspondiente al esfuerzo, significa que la fuerza aplicada se distribuye uniformemente en la seccion, produciéndose asi una deformación uniforme. Si recordamos de la estática, la fuerza P se descompone de manera uniforme sobre la sección.</p>
+<p>Ahora bien, cuando la fuerza deja de ser aplicada el cuerpo puede regresar a su estado original, dependiendo de la magnitud y permanencia de la carga, en forma absoluta o parcial, a esta propiedad se la conoce como <strong>Elasticidad</strong> y hay materiales más elásticos que otros. Uno de estos es el acero, por su gran esfuerzo de fluencia (asociado al límite de proporcionalidad).</p>
+<p>Estos son algunos valores de módulos de elasticidad para diferentes materiales:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Material</p></th>
+<th class="head"><p>Módulo de Elasticidad (kgf/cm2)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Acero</p></td>
+<td><p>2 x 10^6</p></td>
+</tr>
+<tr class="row-odd"><td><p>Concreto</p></td>
+<td><p>15000 x <span class="math notranslate nohighlight">\(\sqrt{f'c}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>El módulo de elasticidad para el acero para este caso es de grado 60, el más utilizado en el medio.</p>
+</div>
+</section>
+<section id="ley-de-hooke">
+<h2>Ley de Hooke<a class="headerlink" href="#ley-de-hooke" title="Permalink to this heading">#</a></h2>
+<p>Robert Hooke desarrolló experimentalmente lo que hoy se conoce como la ley de Hooke y expresa lo siguiente:</p>
+<div class="math notranslate nohighlight">
+\[\delta=\frac{P*L}{A*E}\]</div>
+<p>Donde la deformación o elongación es proporcional a la carga y longitud, e inversamente proporcional al área de la sección y módulo de elasticidad. La esencia de este concepto también puede aplicarse a un caso de compresión y no de tensión o tracción. Como se verá más adelante el módulo de elasticidad para el concreto está en función de su resistencia mientras que para el acero dependiendo del grado que sea tendrá un valor diferente. En muchos casos este valor será el mismo para la compresión, salvo para el concreto que es bueno para compresión y no para la tracción.</p>
+<p>Considerando que:</p>
+<div class="math notranslate nohighlight">
+\[\frac{\delta}{L}=\epsilon\]</div>
+<div class="math notranslate nohighlight">
+\[\sigma=\frac{P}{A}\]</div>
+<p>Tenemos que:</p>
+<div class="math notranslate nohighlight">
+\[\epsilon=\frac{\sigma}{E}\]</div>
+<div class="math notranslate nohighlight">
+\[\sigma=\epsilon*E\]</div>
+<p>Esta relación es de suma importancia, ya que sienta las bases del diseño estructura. Sin ella, nada de lo que hoy está construido lo hubiera sido.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>La ley de Hooke es válida dentro del rango elástico, más allá ya no. La ley de Hooke como se verá en la curva de deformación justamente viene a ser la pendiente de la función lineal entre el esfuerzo y la deformación.</p>
+</div>
+</section>
+<section id="ejemplos-1">
+<h2>Ejemplos 1<a class="headerlink" href="#ejemplos-1" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Se pide determinar la elongación de una barra cuyo módulo de elasticidad = 10 x 10^6 psi, longitud = 25 in y el esfuerzo axial = 15 x 10^3 psi.</p></li>
+</ol>
+<figure class="align-default" id="ejercicio-1">
+<a class="reference internal image-reference" href="_images/3.svg"><img alt="_images/3.svg" height="300px" src="_images/3.svg" /></a>
+</figure>
+</section>
+<section id="diagrama-de-ensayo-a-traccion">
+<h2>Diagrama de ensayo a tracción<a class="headerlink" href="#diagrama-de-ensayo-a-traccion" title="Permalink to this heading">#</a></h2>
+<p>Para poder comenzar con este apartado, haremos referencia a la curva de esfuerzo (<span class="math notranslate nohighlight">\(\sigma\)</span>) y deformación (<span class="math notranslate nohighlight">\(\epsilon\)</span>). En esta gráfica, resaltaremos 4 puntos en específico:</p>
+<figure class="align-default" id="curva-esfuerzo-deformacion">
+<a class="reference internal image-reference" href="_images/4.svg"><img alt="_images/4.svg" height="500px" src="_images/4.svg" /></a>
+</figure>
+<p>El punto A es conocido como limite de proporcionalidad, la región debajo de este es de mucha importancia ya que define el rango elástico del material. Como se verá en el siguiente apartado este límite ayudará a establecer un Factor de Seguridad de tal forma que no se incurra en el rango inelástico el cual es muy complicado de analizar.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Para el estudio del impacto de un sismo sobre una edificación no se toma en cuenta el rango no lineal de los materiales propiamente, sino se realiza una simplificación.</p>
+</div>
+<p>El otro punto importante es el C, correspondiente al esfuerzo último o de resistencia última. Este valor es de mucha importancia para materiales como el concreto, donde el límite de proporcionalidad es pequeño comparado con el acero.</p>
+</section>
+<section id="esfuerzo-permisible">
+<h2>Esfuerzo Permisible<a class="headerlink" href="#esfuerzo-permisible" title="Permalink to this heading">#</a></h2>
+<p>Este valor está en función de la resistencia última o de fluencia, dependiendo del material. Veamos la notación:</p>
+<div class="math notranslate nohighlight">
+\[\sigma_w=\frac{\sigma_{YP}}{n}\]</div>
+<div class="math notranslate nohighlight">
+\[\sigma_w=\frac{\sigma_{u}}{n}\]</div>
+<p>Para el caso del acero, generalmente se toma un valor de n = 2.</p>
+</section>
+<section id="ejemplos-2">
+<h2>Ejemplos 2<a class="headerlink" href="#ejemplos-2" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Determinar la elongación y diámetro de la barra</p></li>
+</ol>
+<figure class="align-default" id="ejemplo-2">
+<a class="reference internal image-reference" href="_images/5.svg"><img alt="_images/5.svg" height="500px" src="_images/5.svg" /></a>
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>Determinar la elongación del punto B.</p></li>
+</ol>
+<figure class="align-default" id="ejemplo-3">
+<a class="reference internal image-reference" href="_images/6.svg"><img alt="_images/6.svg" height="500px" src="_images/6.svg" /></a>
+</figure>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="_images/7.svg"><img alt="_images/7.svg" height="500px" src="_images/7.svg" /></a>
+</figure>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -431,7 +554,25 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elasticidad">Elasticidad</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ley-de-hooke">Ley de Hooke</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-1">Ejemplos 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagrama-de-ensayo-a-traccion">Diagrama de ensayo a tracción</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esfuerzo-permisible">Esfuerzo Permisible</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-2">Ejemplos 2</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" width="595.2pt" height="841.68pt" viewBox="0 0 595.2 841.68" overflow="visible" xmlns="http://www.w3.org/2000/svg">
+  <g id="Dimensiones">
+    <path d="M141.54178,320.65344 C186.02203,297.8624 224.8956,309.2579 249.67468,298.654 C274.45374,288.05005 285.13828,255.4466 326.79666,224.14107 C368.45502,192.83551 441.08725,162.82785 547.4781,274.67465" stroke="#FF00F8" stroke-width="1.4173229" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <path d="M36.312057,633.776 L141.54178,320.65344" stroke="#FF00F8" stroke-width="1.4173229" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  </g>
+  <g id="Default">
+    <circle cx="141.54177856445312" cy="320.6534423828125" r="8.986966133117676" stroke="#000000" stroke-width="1.4173228740692139" fill="none" />
+    <circle cx="166.77549743652344" cy="306.33160400390625" r="8.986966133117676" stroke="#000000" stroke-width="1.4173228740692139" fill="none" />
+    <circle cx="404.7908935546875" cy="195.1668243408203" r="8.986966133117676" stroke="#000000" stroke-width="1.4173228740692139" fill="none" />
+    <circle cx="545.96337890625" cy="274.2779541015625" r="8.986966133117676" stroke="#000000" stroke-width="1.4173228740692139" fill="none" />
+    <path d="M2.9465346,633.776 L589.4097,633.776" stroke="#000000" stroke-width="1.4173229" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <path d="M109.92875,414.72147 L109.92875,501.73032" stroke="#000000" stroke-width="1.4173229" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <path d="M36.312057,176.92506 L36.312057,696.65717" stroke="#000000" stroke-width="1.4173229" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <path d="M109.92875,501.73032 L80.68808,501.73032" stroke="#000000" stroke-width="1.4173229" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <path d="M141.5418,363.1754 L547.4781,363.1754" stroke="#000000" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <path d="M186.70306,504.96606 L186.70306,633.77606" stroke="#000000" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  </g>
+  <text x="343.1890581178272" y="325.0411016975965" font-family="Bradley Hand ITC" text-anchor="middle" fill="#000000" font-size="24.124794006347656">Rango</text>
+  <text x="309.98426444802527" y="356.3307775732062" font-family="Bradley Hand ITC" text-anchor="middle" fill="#000000" font-size="24.124794006347656">Ine</text>
+  <text x="359.0561600865238" y="356.3307775732062" font-family="Bradley Hand ITC" text-anchor="middle" fill="#000000" font-size="24.124794006347656">lástico</text>
+  <polygon fill="#000000" fill-opacity="1" points="153.95596,348.60223 126.96862,375.58957 129.12761,377.74857 156.11494,350.76123" xmlns="" />
+  <polygon fill="#000000" fill-opacity="1" points="535.06396,377.74857 562.0513,350.76123 559.8923,348.60223 532.90497,375.58957" xmlns="" />
+  <path d="M141.5418,334.14716 L141.5418,376.66907" stroke="#000000" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <path d="M547.4781,334.14716 L547.4781,376.66907" stroke="#000000" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <text x="183.47446429144915" y="465.85397597390346" font-family="Bradley Hand ITC" text-anchor="middle" fill="#000000" font-size="24.124794006347656">Rango</text>
+  <text x="183.58543030188372" y="497.1436518495132" font-family="Bradley Hand ITC" text-anchor="middle" fill="#000000" font-size="24.124794006347656">Elástico</text>
+  <polygon fill="#000000" fill-opacity="1" points="201.27623,333.06766 174.28888,306.0803 172.1299,308.2393 199.11723,335.22662" xmlns="" />
+  <polygon fill="#000000" fill-opacity="1" points="172.1299,621.3619 199.11723,648.34924 201.27623,646.19025 174.28888,619.20294" xmlns="" />
+  <path d="M155.03546,320.65347 L200.19673,320.65347" stroke="#000000" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <path d="M155.03546,633.77606 L200.19673,633.77606" stroke="#000000" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <path d="M186.70306,320.65347 L186.70306,446.59128" stroke="#000000" stroke-width="1.44" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <text x="180.29995653063764" y="286.23122618538383" font-family="Bradley Hand ITC" text-anchor="middle" fill="#000000" font-size="48.24958801269531">B</text>
+  <text x="111.11984576732597" y="320.8780681741749" font-family="Bradley Hand ITC" text-anchor="middle" fill="#000000" font-size="48.24958801269531">A</text>
+  <text x="131.49336838422764" y="180.0281070628772" font-family="Bradley Hand ITC" text-anchor="middle" fill="#000000" font-size="48.24958801269531">Esfuerzo</text>
+  <text x="577.9194476785001" y="277.3653223190069" font-family="Bradley Hand ITC" text-anchor="middle" fill="#000000" font-size="48.24958801269531">D</text>
+  <text x="403.3604617198303" y="179.84037978886062" font-family="Bradley Hand ITC" text-anchor="middle" fill="#000000" font-size="48.24958801269531">C</text>
+  <text x="438.5853409116819" y="618.723670328998" font-family="Bradley Hand ITC" text-anchor="middle" fill="#000000" font-size="48.24958801269531">Deformación</text>
+</svg>
